@@ -49,5 +49,38 @@ body .card .search input {
   margin-right: 16px;
   font-size: 18px;
 }
+body .card .weather .weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+body .card .weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+body .card .weather h2 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+body .card .weather .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+body .card .weather .details .col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+body .card .weather .details .col img {
+  width: 40px;
+  margin-right: 10px;
+}
+body .card .weather .details .col .humidity, body .card .weather .details .col .wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
 
 /*# sourceMappingURL=style.css.map */
