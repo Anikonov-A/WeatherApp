@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 //font-family: 'Merriweather', serif;
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +25,9 @@ body {
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    @include max-screen(428px){
+      padding: 40px 20px;
+    }
     .error{
       text-align: left;
       margin-left: 10px;
@@ -54,6 +63,9 @@ body {
         flex: 1;
         margin-right: 16px;
         font-size: 18px;
+        @include max-screen(428px){
+          width: 60%;
+        }
       }
     }
     .weather{
@@ -77,6 +89,9 @@ body {
         justify-content: space-between;
         padding: 0 20px;
         margin-top: 50px;
+        @include max-screen(428px){
+          padding: 0 5px;
+      }
         .col{
           display: flex;
           align-items: center;
@@ -84,10 +99,16 @@ body {
           img{
             width: 40px;
             margin-right: 10px;
+            @include max-screen(428px){
+              width: 30px;
+            }
           }
           .humidity, .wind{
             font-size: 28px;
             margin-top: -6px;
+            @include max-screen(428px){
+              font-size: 18px;
+            }
           }
         }
       }
