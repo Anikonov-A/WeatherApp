@@ -19,6 +19,13 @@ body .card {
   padding: 40px 35px;
   text-align: center;
 }
+body .card .error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
 body .card .search {
   width: 100%;
   display: flex;
@@ -48,6 +55,9 @@ body .card .search input {
   flex: 1;
   margin-right: 16px;
   font-size: 18px;
+}
+body .card .weather {
+  display: none;
 }
 body .card .weather .weather-icon {
   width: 170px;

@@ -19,6 +19,13 @@ body {
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    .error{
+      text-align: left;
+      margin-left: 10px;
+      font-size: 14px;
+      margin-top: 10px;
+      display: none;
+    }
     .search {
       width: 100%;
       display: flex;
@@ -50,6 +57,7 @@ body {
       }
     }
     .weather{
+      display: none;
       .weather-icon{
         width: 170px;
         margin-top: 30px;
